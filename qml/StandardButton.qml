@@ -70,7 +70,7 @@ Item {
         color: !flat ? LingmoUI.Theme.textColor : LingmoUI.Theme.highlightedTextColor
         text: control.text
         visible: !_icon.visible
-        minimumPointSize: Math.round(control.height / 5)
-        font.pointSize: Math.round(control.height / 5)
+        minimumPointSize: Math.max(1, Math.round(control.height / 5))
+        font.pointSize: Math.max(1, Math.round(control.height / 5))
     }
 }
